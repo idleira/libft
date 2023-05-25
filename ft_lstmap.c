@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 12:17:55 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/05/20 12:21:29 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/05/25 14:21:40 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	new_node = NULL;
 	if (!lst || !f || !del)
 		return (NULL);
-	while (lst != NULL)
+	while (lst)
 	{
 		new_node = ft_lstnew(f(lst->content));
 		if (!new_node)
