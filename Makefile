@@ -6,7 +6,7 @@
 #    By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/19 15:16:37 by ibeliaie          #+#    #+#              #
-#    Updated: 2023/05/22 17:28:49 by ibeliaie         ###   ########.fr        #
+#    Updated: 2023/05/25 14:59:48 by ibeliaie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,24 +63,30 @@ BONUS =	ft_lstmap.c       \
 BONUS_OBJ =$(BONUS:.c=.o)
 
 CC = gcc
-FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
+ 
+RM = @rm -rf
 
-RM = rm -rf
-
+YELLOW = \033[0;93m
+GREEN = \033[0;92m
+PURPLE = \033[0;35m
 
 all: $(NAME)
 	
 $(NAME): $(OBJ)
-	ar -rsc $(NAME) $(OBJ)
+	@ar -rsc $(NAME) $(OBJ)
+	@echo "$(PURPLE)libft compiled successfully!!$(DEF_COLOR)"
 
 bonus: $(OBJ) $(BONUS_OBJ)
-	ar -rsc $(NAME) $(OBJ) $(BONUS_OBJ)
+	@ar -rsc $(NAME) $(OBJ) $(BONUS_OBJ)
+	@echo "$(YELLOW)compiled libft(+ bonus) successfully $(DEF_COLOR)"
 
 clean:
 	$(RM) $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
 	$(RM) $(NAME)
+	@echo "$(GREEN)everything cleaned!$(DEF_COLOR)"
 
 re: fclean all
 
