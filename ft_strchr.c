@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:44:38 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/05/23 16:04:29 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/05/24 16:29:07 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strchr(const char *str, int c)
 //     if (result != NULL)
 //         printf("'%c' is found at position: %ld\n", target, result - str);
 //     else
-//         printf("Character '%c' not found in the string.\n", target);
+//         printf("'%c' was not found in the string.\n", target);
 //     return 0;
 // }
 // //
