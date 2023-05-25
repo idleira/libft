@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 15:02:12 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/05/23 13:42:23 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/05/24 20:45:45 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t len)
 // 	char str2[] = "bonjour";
 // 	char str1[20];
 // 	size_t len = 7;
-// 	ft_memcpy(str1, str2, len);
+// 	ft_memcpy(str1, str2, len * sizeof(char));
 // 	printf("Copied string is: %s\n", str2);
 // }
