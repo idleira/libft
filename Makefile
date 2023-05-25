@@ -6,7 +6,7 @@
 #    By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/19 15:16:37 by ibeliaie          #+#    #+#              #
-#    Updated: 2023/05/25 14:59:48 by ibeliaie         ###   ########.fr        #
+#    Updated: 2023/05/25 15:30:50 by ibeliaie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,6 +83,7 @@ bonus: $(OBJ) $(BONUS_OBJ)
 
 clean:
 	$(RM) $(OBJ) $(BONUS_OBJ)
+	@echo "$(YELLOW)object files cleaned!$(DEF_COLOR)"
 
 fclean: clean
 	$(RM) $(NAME)
