@@ -6,7 +6,7 @@
 /*   By: ibeliaie <ibeliaie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:41:09 by ibeliaie          #+#    #+#             */
-/*   Updated: 2023/05/23 15:42:32 by ibeliaie         ###   ########.fr       */
+/*   Updated: 2023/05/25 15:06:17 by ibeliaie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,25 @@
 static int	wcount(char const *s, char c)
 {
 	int	count;
+	int	in_word;
 
 	count = 0;
+	in_word = 0;
 	while (*s)
 	{
-		if (*s != c)
+		if (*s == c)
+			in_word = 0;
+		else if (in_word == 0)
 		{
+			in_word = 1;
 			count++;
-			while (*s && *s != c)
-				s++;
 		}
-		else
-			s++;
+		s++;
 	}
 	return (count);
 }
 
-/* word length */
+/* word length*/
 static int	wlen(char const *s, char c)
 {
 	int	len;
@@ -47,19 +49,18 @@ static int	wlen(char const *s, char c)
 }
 
 /* word copy */
-static char	*wcopy(char const *s, int len)
+static char	*wcopy(const char *s, int len)
 {
-	char	*word;
 	int		i;
+	char	*word;
 
 	word = (char *)malloc((len + 1) * sizeof(char));
 	if (!word)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (i < len)
 	{
-		word[i] = *s;
-		s++;
+		word[i] = s[i];
 		i++;
 	}
 	word[i] = '\0';
@@ -70,27 +71,28 @@ static char	*wcopy(char const *s, int len)
 char	**ft_split(char const *s, char c)
 {
 	int		i;
-	int		j;
 	int		len;
 	int		count;
 	char	**result;
 
+	if (!s)
+		return (NULL);
 	count = wcount(s, c);
 	result = (char **)malloc((count + 1) * sizeof(char *));
-	j = 0;
-	if (!s || !result)
-		return (0);
+	if (!result)
+		return (NULL);
+	i = 0;
 	while (*s)
 	{
 		if (*s != c)
 		{
 			len = wlen(s, c);
-			result[j++] = wcopy(s, len);
+			result[i++] = wcopy(s, len);
 			s += len;
 		}
 		else
 			s++;
 	}
-	result[j] = 0;
+	result[i] = NULL;
 	return (result);
 }
