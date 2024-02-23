@@ -19,7 +19,9 @@ this is crucial because this library will be used in all our projects later on.
 4. run your executable with `./a.out`;
    
 5. to clean up:
+
    • use `make clean` to remove .o files;
+   
    • use `make fclean` to clean up the project directory by removing **all** generated files.
 
 ## library contents
