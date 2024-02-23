@@ -1,9 +1,26 @@
 # libft
 ## description
 libft is the first step in the 42 curriculum.
+
 at 42, we're encouraged to understand data structures and algorithms deeply.
 that's why this projecy involves re-making of the standard c library functions with addition of some extras.
+
 this is crucial because this library will be used in all our projects later on.
+
+## usage
+1. clone this repository: `git clone git@github.com:idleira/libft.git libft && cd libft`;
+
+2. make the project:
+   • `make` to compile mandatory part of the project;
+   • `make bonus` to compile with bonus functions.
+   
+3. to use the library, complie your file with the .a library file: `gcc your_file.c libft/libft.a`;
+   
+4. run your executable with `./a.out`;
+   
+5. to clean up:
+   • use `make clean` to remove .o files;
+   • use `make fclean` to clean up the project directory by removing **all** generated files.
 
 ## library contents
 libft contains 43 functions.
@@ -35,15 +52,3 @@ libft contains 43 functions.
 |-----------------|-----------------|-----------------|-----------------|
 |   ft_lstsize    |    ft_lstnew    |  ft_lstadd_back |    ft_lstiter   |
 |   ft_lstlast    |    ft_lstmap    | ft_lstadd_front |   ft_lstdelone  |
-
-
-## usage
-1. clone this repository: `git clone git@github.com:idleira/libft.git libft && cd libft`;
-2. make the project:
-   • `make` to compile mandatory part of the project;
-   • `make bonus` to compile with bonus functions.
-3. to use the library, complie your file with the .a library file: `gcc your_file.c libft/libft.a`;
-4. then run your executable with `./a.out`;
-5. to clean up:
-   • use `make clean` to remove .o files;
-   • use `make fclean` to clean up the project directory by removing **all** generated files.
