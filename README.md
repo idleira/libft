@@ -54,3 +54,6 @@ libft contains 43 functions.
 |-----------------|-----------------|-----------------|-----------------|
 |   ft_lstsize    |    ft_lstnew    |  ft_lstadd_back |    ft_lstiter   |
 |   ft_lstlast    |    ft_lstmap    | ft_lstadd_front |   ft_lstdelone  |
+
+## my final grade
+![libft grade](https://github.com/idleira/libft/assets/127216218/149aa8e9-1e2e-4543-bc8e-cbc4e21136a1)
