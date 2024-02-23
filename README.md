@@ -1,4 +1,4 @@
-# libft
+# libft - @42Wolfsburg
 ## description
 libft is the first step in the 42 curriculum.
 
