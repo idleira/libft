@@ -3,9 +3,12 @@
 libft is the first step in the 42 curriculum.
 
 at 42, we're encouraged to understand data structures and algorithms deeply.
-that's why this projecy involves re-making of the standard c library functions with addition of some extras.
+
+that's why this project involves re-making of the standard c library functions with addition of some extras.
 
 this project is crucial because this library will be used in all our projects later on.
+
+## 
 
 these are some **resources** that helped me:
 
@@ -16,6 +19,8 @@ these are some **resources** that helped me:
 • c library references from [cplusplus](https://cplusplus.com/reference/)
 
 • this [learn c programming](https://programiz.pro/learn/master-c-programming?utm_source=reference-sidebar-nav&utm_campaign=programiz&utm_medium=referral) course
+
+## 
 
 ## usage
 1. clone this repository: `git clone git@github.com:idleira/libft.git libft && cd libft`;
