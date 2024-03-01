@@ -10,7 +10,7 @@ this project is crucial because this library will be used in all our projects la
 
 ## 
 
-these are some **resources** that helped me:
+these are some **resources** i used:
 
 • c references from [geeksforgeeks](https://www.geeksforgeeks.org/c-programming-language/?ref=shm)
 
